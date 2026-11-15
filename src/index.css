@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Tailwind v4 makes plain borders the same color as the text (often black).
+   This makes every plain border light grey instead. */
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
